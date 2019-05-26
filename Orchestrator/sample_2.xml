@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<conf>
+<name>APP</name>
+
+<microservice name="Acts">
+        <image_name>acts</image_name>
+        <docker_file></docker_file>
+        <detach>true</detach>
+        <port_mapping>3000:8000</port_mapping> <!-- On container:On Host -->
+        <mem_limit>256</mem_limit>
+        <initial_count>1</initial_count>
+        <alarm>
+                <func>sum</func>
+                <threshold>20</threshold>
+                <time_period>120</time_period>
+        </alarm>
+        <health_check>/api/v1/_health</health_check>
+</microservice>
+
+<database>
+        <image_name>mvertes/alpine-mongo</image_name>
+        <docker_file></docker_file>
+        <detach>true</detach>
+        <port_mapping>27017:27017</port_mapping>
+</database>
+
+</conf>
+
