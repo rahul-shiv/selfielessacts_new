@@ -16,7 +16,7 @@
     "express": "^4.16.4",
     "image-to-base64": "^2.0.1",
     "is-base64": "^0.1.0",
-    "mongoose": "^5.4.8"
+    "mongoose": "^5.7.5"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
