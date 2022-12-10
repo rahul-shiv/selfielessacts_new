@@ -13,7 +13,7 @@
     "date-and-time": "^0.6.3",
     "docker-stats": "^0.9.0",
     "dockerstats": "^1.2.8",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "image-to-base64": "^2.0.1",
     "is-base64": "^0.1.0",
     "mongoose": "^5.4.8"
